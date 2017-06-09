@@ -51,3 +51,6 @@ $ docker rmi  xxx//image id  //镜像id
 ```
 
 [参考](http://www.jianshu.com/p/fcd0e542a6b2)
+
+## LICENSE
+随兴用
