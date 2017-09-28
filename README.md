@@ -27,14 +27,27 @@ ENV TZ "Asia/Shanghai"  #设置时区
 ``` shell
 docker build --tag sakurallj/mysql -f mysql/Dockerfile .
 docker build --tag sakurallj/php7 -f php7/Dockerfile .
+docker build --tag sakurallj/php7-swoole -f php7-swoole/Dockerfile .
+docker build --tag sakurallj/php7-xdebug -f php7-xdebug/Dockerfile . //需要把里面的remote_host对应的ip换为IDE对应的ip
 docker build --tag sakurallj/nginx -f nginx/Dockerfile .
 ```
+## PHPStorm xdebug 配置
+>In Intellij/PHPStorm go to: Languages & Frameworks > PHP > Debug > DBGp Proxy and set the following settings:
+>Host: your IP address
+>Port: 9000
+![这里写图片描述](https://github.com/sakurallj/docker-lnmp/images/1506582725591.jpg)
+![这里写图片描述](https://github.com/sakurallj/docker-lnmp/images/1506582813543.jpg)
+![这里写图片描述](https://github.com/sakurallj/docker-lnmp/images/1506582842657.jpg)
+enjoy it
+![这里写图片描述](https://github.com/sakurallj/docker-lnmp/images/1506582873299.jpg)
+[参考 Debug your PHP in Docker with Intellij/PHPStorm and Xdebug](https://gist.github.com/chadrien/c90927ec2d160ffea9c4)
 ## 运行
 ``` shell
 $ docker run --name mysql -p 8800:3306 -v mysql的数据文件放在你本机的路径(如：/home/sakurallj/data/mysql):/var/lib/mysql -e MYSQL_ROOT_PASSWORD=你随便输入字符作为root用户的密码 -it sakurallj/mysql
 $ docker run --name php7 -p 9000:9000 -v 你本机的php代码路径（如：/home/sakurallj/personDoc/dockerSpace/nginx/html）:/usr/local/nginx/html --link mysql:mysql -it sakurallj/php7
 $ docker run --name nginx -p 80:80 -v 你本机的php代码路径（如：/home/sakurallj/personDoc/dockerSpace/nginx/html）:/usr/local/nginx/html --link php7:php7 -it sakurallj/nginx
 ```
+
 ## 测试
 把[test.php](https://github.com/sakurallj/docker-lnmp/blob/master/lnmp/php7/test.php)放到/home/sakurallj/personDoc/dockerSpace/nginx/html下，然后访问http://127.0.0.1:8700/test.php
 
