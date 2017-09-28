@@ -2,7 +2,7 @@
 每次换电脑都要重新部署lnmp，每次花费的时间至少要半天，很浪费时间。所以就把lnmp docker化。
 ## 环境
 本机环境：ubuntu 16.04 LTS
-## 安装dockeer
+## 安装docker
 
 ``` shell
 $ apt-get install docker.io
