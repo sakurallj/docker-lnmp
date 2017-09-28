@@ -32,14 +32,15 @@ docker build --tag sakurallj/php7-xdebug -f php7-xdebug/Dockerfile . //需要把
 docker build --tag sakurallj/nginx -f nginx/Dockerfile .
 ```
 ## PHPStorm xdebug 配置
->In Intellij/PHPStorm go to: Languages & Frameworks > PHP > Debug > DBGp Proxy and set the following settings:
->Host: your IP address
->Port: 9000
-![这里写图片描述](https://github.com/sakurallj/docker-lnmp/images/1506582725591.jpg)
-![这里写图片描述](https://github.com/sakurallj/docker-lnmp/images/1506582813543.jpg)
-![这里写图片描述](https://github.com/sakurallj/docker-lnmp/images/1506582842657.jpg)
+> In Intellij/PHPStorm go to: Languages & Frameworks > PHP > Debug > DBGp Proxy and set the following settings:
+> Host: your IP address
+> Port: 9000
+
+![这里写图片描述](https://github.com/sakurallj/docker-lnmp/blob/master/images/1506582725591.jpg)
+![这里写图片描述](https://github.com/sakurallj/docker-lnmp/blob/master/images/1506582813543.jpg)
+![这里写图片描述](https://github.com/sakurallj/docker-lnmp/blob/master/images/1506582842657.jpg)
 enjoy it
-![这里写图片描述](https://github.com/sakurallj/docker-lnmp/images/1506582873299.jpg)
+![这里写图片描述](https://github.com/sakurallj/docker-lnmp/blob/master/images/1506582873299.jpg)
 [参考 Debug your PHP in Docker with Intellij/PHPStorm and Xdebug](https://gist.github.com/chadrien/c90927ec2d160ffea9c4)
 ## 运行
 ``` shell
