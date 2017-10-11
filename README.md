@@ -41,7 +41,7 @@ docker build --tag sakurallj/nginx -f nginx/Dockerfile .
 ![这里写图片描述](https://github.com/sakurallj/docker-lnmp/blob/master/images/1506582842657.jpg)
 enjoy it
 ![这里写图片描述](https://github.com/sakurallj/docker-lnmp/blob/master/images/1506582873299.jpg)
-[参考 Debug your PHP in Docker with Intellij/PHPStorm and Xdebug](https://gist.github.com/chadrien/c90927ec2d160ffea9c4)
+[参考 Debug your PHP in Docker with Intellij/PHPStorm and Xdebug 需要翻墙](https://gist.github.com/chadrien/c90927ec2d160ffea9c4)
 ## 运行
 ``` shell
 $ docker run --name mysql -p 8800:3306 -v mysql的数据文件放在你本机的路径(如：/home/sakurallj/data/mysql):/var/lib/mysql -e MYSQL_ROOT_PASSWORD=你随便输入字符作为root用户的密码 -it sakurallj/mysql
