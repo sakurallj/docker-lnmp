@@ -62,7 +62,14 @@ $ docker ps //查看运行中的container
 $ docker rm $(docker ps -al)  //批量删除 container
 $ docker rmi  xxx//image id  //镜像id
 
+
 ```
+## 解决 Failed to get D-Bus connection: Operation not permitted
+[Dockerfile for systemd base image](https://github.com/docker-library/docs/tree/master/centos#systemd-integration)
+[mac下使用docker配置php开发环境](https://www.u3v3.com/ar/1319)
+## 解决crontab (CRON) DEATH (can't lock /var/run/crond.pid, otherpid may be 206): Resource temporarily unavailable
+[点这里](http://blog.csdn.net/SakuraLLj/article/details/78407944)
+
 ## 参考
 [Docker多容器部署LNMP环境](http://www.jianshu.com/p/fcd0e542a6b2)
 
