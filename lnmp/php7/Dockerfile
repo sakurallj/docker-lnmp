@@ -4,7 +4,7 @@
 # https://github.com/sakurallj/docker-lnmp.git
 #
 
-FROM hub.c.163.com/library/centos:centos7 
+FROM hub.c.163.com/library/centos:centos7
 MAINTAINER sakurallj <liaolingjia@163.com>
 
 ENV TZ "Asia/Shanghai"
