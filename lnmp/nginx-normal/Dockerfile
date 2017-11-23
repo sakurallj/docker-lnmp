@@ -4,7 +4,7 @@
 # https://github.com/sakurallj/docker-lnmp.git
 #
 
-FROM hub.c.163.com/library/centos:centos7 
+FROM  centos
 MAINTAINER sakurallj <liaolingjia@163.com>
 
 ENV TZ "Asia/Shanghai"
@@ -54,7 +54,7 @@ RUN cd /tmp && \
  
 
 
-EXPOSE 80 443 7000 7001 7002 7003 7004 7005 7006
+EXPOSE 80 443 10000 10001 10002 10003 10004 10005 10006
 
 #启动nginx
 ENTRYPOINT ["/usr/local/nginx/sbin/nginx", "-g", "daemon off;"]

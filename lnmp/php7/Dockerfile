@@ -4,7 +4,7 @@
 # https://github.com/sakurallj/docker-lnmp.git
 #
 
-FROM hub.c.163.com/library/centos:centos7
+FROM centos
 MAINTAINER sakurallj <liaolingjia@163.com>
 
 ENV TZ "Asia/Shanghai"
@@ -34,8 +34,6 @@ RUN cp /tmp/php-7.1.5/php.ini-production /usr/local/php/lib/php.ini && \
     cp /usr/local/php/etc/php-fpm.conf.default /usr/local/php/etc/php-fpm.conf && \
     cp /usr/local/php/etc/php-fpm.d/www.conf.default /usr/local/php/etc/php-fpm.d/www.conf
 
-#install yaf 
-RUN cd / && wget  http://pecl.php.net/get/yaf-3.0.4.tgz && tar xvf /yaf-3.0.4.tgz   && ls -al && cd /yaf-3.0.4  && ls -al && /usr/local/php/bin/phpize && ./configure --with-php-config=/usr/local/php/bin/php-config  && make  && make test && make install && echo "extension=yaf.so">>/usr/local/php/lib/php.ini
 
 
 EXPOSE 9000
