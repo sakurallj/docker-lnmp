@@ -45,7 +45,7 @@ RUN cd / && wget https://xdebug.org/files/xdebug-2.5.5.tgz && tar xvf /xdebug-2.
     &&  echo "zend_extension=xdebug.so">>/usr/local/php/lib/php.ini \
      &&  echo "xdebug.remote_enable = on">>/usr/local/php/lib/php.ini \
       &&  echo "xdebug.remote_autostart = off">>/usr/local/php/lib/php.ini \
-        &&  echo "xdebug.remote_host=192.168.101.106">>/usr/local/php/lib/php.ini \
+        &&  echo "xdebug.remote_host=192.168.101.155">>/usr/local/php/lib/php.ini \
         &&  echo "xdebug.remote_port = 9999">>/usr/local/php/lib/php.ini \
          &&  echo "xdebug.idekey = PHPSTROM">>/usr/local/php/lib/php.ini \
          && rm -f xdebug-2.5.5.tgz && rm -rf xdebug-2.5.5
@@ -74,32 +74,21 @@ RUN echo "[mongodb-org-3.4]">>/etc/yum.repos.d/mongodb-enterprise.repo \
     && echo "gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc">>/etc/yum.repos.d/mongodb-enterprise.repo \
     && yum install -y mongodb-org
 
+RUN ln -s /usr/local/php/bin/php /usr/local/bin
 
-ENV container docker
-RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
-systemd-tmpfiles-setup.service ] || rm -f $i; done); \
-rm -f /lib/systemd/system/multi-user.target.wants/*;\
-rm -f /etc/systemd/system/*.wants/*;\
-rm -f /lib/systemd/system/local-fs.target.wants/*; \
-rm -f /lib/systemd/system/sockets.target.wants/*udev*; \
-rm -f /lib/systemd/system/sockets.target.wants/*initctl*; \
-rm -f /lib/systemd/system/basic.target.wants/*;\
-rm -f /lib/systemd/system/anaconda.target.wants/*;
-VOLUME [ "/sys/fs/cgroup" ]
+#install composer
+COPY composer.phar .
+RUN   mv composer.phar /usr/local/bin/composer && chmod u+x /usr/local/bin/composer && composer config -g repo.packagist composer https://packagist.phpcomposer.com
+
 
 
 EXPOSE 9000
 EXPOSE 9999
 
-RUN ln -s /usr/local/php/bin/php /usr/local/bin
-#setting php-fpm
+
+#配置php
 RUN sed -i -e 's/listen = 127.0.0.1:9000/listen = 9000/' /usr/local/php/etc/php-fpm.d/www.conf
 
-#start php-fpm
-RUN touch /docker_start_init_run.sh && echo "#!/bin/sh">>/docker_start_init_run.sh \
-    &&echo " service mongod start  && /usr/local/php/sbin/php-fpm  -c /usr/local/php/lib/php.ini & ">>/docker_start_init_run.sh \
-    &&echo 'exec "$@"'>>/docker_start_init_run.sh && chmod +x /docker_start_init_run.sh    && cat /docker_start_init_run.sh
 
-CMD ["/usr/sbin/init"]
-
-ENTRYPOINT ["/docker_start_init_run.sh"]
+#启动php
+ENTRYPOINT ["/usr/local/php/sbin/php-fpm", "-F", "-c", "/usr/local/php/lib/php.ini"]
