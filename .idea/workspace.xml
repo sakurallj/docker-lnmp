@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f45a635e-06df-4a8e-9990-85693862fd94" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/lnmp/php7-xdebug/composer.phar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/sakurallj.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lnmp/gitlab/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lnmp/php7-xdebug5.6.31/Dockerfile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lnmp/php7-xdebug5.6.31/composer.phar" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lnmp/php7-xdebug5.6.31/scripts/build_php7.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lnmp/php7-xdebug5.6.31/scripts/container_php7.sh" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lnmp/php7-xdebug5.6.31/test.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/docker-lnmp.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/images/1506582725591.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/1506582813543.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/1506582842657.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/1506582873299.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/lnmp/nginx-normal/Dockerfile" afterPath="$PROJECT_DIR$/lnmp/nginx-normal/Dockerfile" />
       <change beforePath="$PROJECT_DIR$/lnmp/php7-xdebug/Dockerfile" afterPath="$PROJECT_DIR$/lnmp/php7-xdebug/Dockerfile" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +27,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lnmp/php7-xdebug/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="585">
+              <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -38,7 +43,11 @@
       <find>master</find>
       <find>as root/super user!</find>
       <find>apc</find>
+      <find>sudo</find>
     </findStrings>
+    <replaceStrings>
+      <replace>RUN</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/lnmp/php7-xdebug/composer.phar/src</dir>
     </dirStrings>
@@ -55,10 +64,15 @@
         <option value="$PROJECT_DIR$/lnmp/test-crontab/Dockerfile" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lnmp/php7-swoole/Dockerfile" />
-        <option value="$PROJECT_DIR$/lnmp/nginx-normal/Dockerfile" />
         <option value="$PROJECT_DIR$/start_new_mysql.php" />
         <option value="$PROJECT_DIR$/lnmp/php7/Dockerfile" />
         <option value="$PROJECT_DIR$/do_new_mysql.php" />
+        <option value="$PROJECT_DIR$/lnmp/github/Dockerfile" />
+        <option value="$PROJECT_DIR$/lnmp/gitlab/Dockerfile" />
+        <option value="$PROJECT_DIR$/lnmp/php7-xdebug5.6.31/Dockerfile" />
+        <option value="$PROJECT_DIR$/lnmp/nginx-normal/Dockerfile" />
+        <option value="$PROJECT_DIR$/tensorflow/Dockerfile" />
+        <option value="$PROJECT_DIR$/tensorflow/Dockerfile-gf" />
         <option value="$PROJECT_DIR$/lnmp/php7-xdebug/Dockerfile" />
       </list>
     </option>
@@ -70,11 +84,28 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="192.168.101.106" port="9999" />
+  <component name="PhpXdebugProxy" ide_key="PHPSTORM" host="10.0.2.159" port="9999" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="2560" />
-    <option name="height" value="1341" />
+    <option name="x" value="259" />
+    <option name="y" value="694" />
+    <option name="width" value="851" />
+    <option name="height" value="420" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -94,111 +125,48 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mysql" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="mysql" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="nginx" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="nginx-normal" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php7" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php7-swoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php7-swoole" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="docker" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docker" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="php7-xdebug" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="php7-xdebug" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="test-crontab" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="docker-lnmp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docker-lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lnmp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="test-crontab" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="scripts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.php.debug.xdebug.proxy" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lnmp/php7-xdebug" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/lnmp/php7/file" />
-      <recent name="$PROJECT_DIR$/lnmp" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lnmp/php7-xdebug" />
       <recent name="$PROJECT_DIR$/images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tensorflow" />
+      <recent name="$PROJECT_DIR$/lnmp" />
+      <recent name="$PROJECT_DIR$/lnmp/github" />
+      <recent name="$PROJECT_DIR$/lnmp/php7-xdebug" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -268,26 +236,39 @@
       <workItem from="1516585627033" duration="478000" />
       <workItem from="1516873232765" duration="1795000" />
       <workItem from="1518076378571" duration="629000" />
+      <workItem from="1519698432853" duration="20497000" />
+      <workItem from="1519866454958" duration="3442000" />
+      <workItem from="1520212888636" duration="596000" />
+      <workItem from="1520313535355" duration="578000" />
+      <workItem from="1520417135815" duration="548000" />
+      <workItem from="1520424324474" duration="599000" />
+      <workItem from="1520911814471" duration="602000" />
+      <workItem from="1521081476620" duration="9884000" />
+      <workItem from="1521422287957" duration="16312000" />
+      <workItem from="1522027380785" duration="596000" />
+      <workItem from="1522034542414" duration="3780000" />
+      <workItem from="1522229916147" duration="10000" />
+      <workItem from="1522293780767" duration="56000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102424000" />
+    <option name="totallyTimeSpent" value="159924000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="2560" height="1341" extended-state="0" />
+    <frame x="259" y="694" width="851" height="420" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16640191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0074165636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.399137" sideWeight="0.501994" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28127554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.498006" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -308,48 +289,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="255">
-            <caret line="17" column="3" lean-forward="false" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lnmp/php7-xdebug/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="62" lean-forward="false" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lnmp/php7/scripts/container_php7.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lnmp/nginx/container_nginx.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="65" lean-forward="false" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lnmp/nginx/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -382,7 +321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -432,7 +370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -562,34 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lnmp/nginx/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lnmp/nginx-normal/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1064">
-          <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lnmp/php7-swoole/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-52">
-          <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lnmp/php7/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lnmp/mysql/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -646,10 +555,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lnmp/php7/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lnmp/php7-swoole/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="22" column="57" lean-forward="false" selection-start-line="22" selection-start-column="57" selection-end-line="22" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lnmp/gitlab/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lnmp/php7-xdebug5.6.31/scripts/build_php7.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lnmp/php7-xdebug5.6.31/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lnmp/nginx-normal/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lnmp/nginx/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="51" column="70" lean-forward="false" selection-start-line="51" selection-start-column="70" selection-end-line="51" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow/Dockerfile-gf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lnmp/php7-xdebug/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="585">
+          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
           <folding />
         </state>
       </provider>

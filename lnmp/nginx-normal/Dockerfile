@@ -50,7 +50,7 @@ RUN cd /tmp && \
 
 
 
- 
+ RUN sed -i '81a include s-conf/*.conf;' /usr/local/nginx/conf/nginx.conf
  
 
 
