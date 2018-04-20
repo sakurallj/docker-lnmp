@@ -27,10 +27,11 @@ RUN mkdir -p /usr/local/nginx/html
 RUN  wget http://cn2.php.net/distributions/php-7.1.5.tar.gz && \
   tar xzf php-7.1.5.tar.gz && \
   cd /php-7.1.5 && \
+
   ./configure \
     --prefix=/usr/local/php \
     --with-mysqli --with-pdo-mysql --with-iconv-dir --with-freetype-dir --with-jpeg-dir --with-png-dir --with-zlib --with-libxml-dir --enable-simplexml --enable-xml --disable-rpath --enable-bcmath --enable-soap --enable-zip --with-curl --enable-fpm --with-fpm-user=nobody --with-fpm-group=nobody --enable-mbstring  --enable-sockets  --with-gd --enable-gd-native-ttf --with-openssl --with-mhash --enable-opcache  --enable-pcntl  && \
-    make && \
+
     make install
 
 #install pcntl
@@ -41,8 +42,9 @@ RUN cp /php-7.1.5/php.ini-production /usr/local/php/lib/php.ini && \
     cp /usr/local/php/etc/php-fpm.conf.default /usr/local/php/etc/php-fpm.conf && \
     cp /usr/local/php/etc/php-fpm.d/www.conf.default /usr/local/php/etc/php-fpm.d/www.conf
 
+
 #install xdebug
-RUN cd / && wget https://xdebug.org/files/xdebug-2.5.5.tgz && tar xvf /xdebug-2.5.5.tgz && ls -al && cd /xdebug-2.5.5 && ls -al && /usr/local/php/bin/phpize && ./configure --with-php-config=/usr/local/php/bin/php-config  && make  && make test && make install \
+RUN cd / && wget https://xdebug.org/files/xdebug-2.6.0.tgz && tar xvf /xdebug-2.6.0.tgz && ls -al && cd /xdebug-2.6.0 && ls -al && /usr/local/php/bin/phpize && ./configure --with-php-config=/usr/local/php/bin/php-config  && make  && make test && make install \
     &&  echo "[xdebug]">>/usr/local/php/lib/php.ini \
     &&  echo "zend_extension=xdebug.so">>/usr/local/php/lib/php.ini \
      &&  echo "xdebug.remote_enable = on">>/usr/local/php/lib/php.ini \
@@ -50,7 +52,7 @@ RUN cd / && wget https://xdebug.org/files/xdebug-2.5.5.tgz && tar xvf /xdebug-2.
         &&  echo "xdebug.remote_host=192.168.11.146">>/usr/local/php/lib/php.ini \
         &&  echo "xdebug.remote_port = 9999">>/usr/local/php/lib/php.ini \
          &&  echo "xdebug.idekey = PHPSTROM">>/usr/local/php/lib/php.ini \
-         && rm -f xdebug-2.5.5.tgz && rm -rf xdebug-2.5.5
+         && rm -f xdebug-2.6.0.tgz && rm -rf xdebug-2.6.0
 
 #install redis
 RUN cd / && wget http://pecl.php.net/get/redis-3.1.4.tgz && tar xvf /redis-3.1.4.tgz && ls -al && cd /redis-3.1.4 && ls -al &&  /usr/local/php/bin/phpize && ./configure --with-php-config=/usr/local/php/bin/php-config  && make  && make test && make install &&  echo "[redis]">>/usr/local/php/lib/php.ini && echo "extension=redis.so">>/usr/local/php/lib/php.ini && rm -f redis-3.1.4.tgz && rm -rf redis-3.1.4
@@ -70,6 +72,7 @@ RUN cd / &&  curl -sS https://getcomposer.org/installer | php && mv composer.pha
 #install re2c
 RUN cd / && wget https://github.com/skvadrik/re2c/releases/download/1.0.3/re2c-1.0.3.tar.gz && tar xvf re2c-1.0.3.tar.gz && cd re2c-1.0.3 && ./configure && make && make install
 
+
 #install phalcon
 RUN cd / &&  wget https://github.com/phalcon/cphalcon/archive/master.zip && unzip master.zip   && ls -al && cd /cphalcon-master/build && ls -al \
       &&  ./install --phpize /usr/local/php/bin/phpize --php-config /usr/local/php/bin/php-config && echo  "extension=phalcon.so">>/usr/local/php/lib/php.ini \
@@ -80,9 +83,7 @@ RUN cd / &&  wget https://github.com/phalcon/cphalcon/archive/master.zip && unzi
     #配置php
 RUN sed -i -e 's/listen = 127.0.0.1:9000/listen = 9000/' /usr/local/php/etc/php-fpm.d/www.conf
 
-
-
-EXPOSE 9000  9999 8888
+EXPOSE 9000 9999 80 443 8080
 
 
 #启动php
