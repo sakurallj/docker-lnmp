@@ -74,6 +74,8 @@ RUN   mv composer.phar /usr/local/bin/composer && chmod u+x /usr/local/bin/compo
 
 EXPOSE 9000  9999 8888
 
+ik\\\\\\
+
 
 #配置php
 RUN sed -i -e 's/listen = 127.0.0.1:9000/listen = 9000/' /usr/local/php/etc/php-fpm.d/www.conf
